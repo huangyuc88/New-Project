@@ -42,9 +42,13 @@ My new project
     git branch列出所有分支
     当前分支前面会标一个*号。
     在dev分支上修改文件后正常提交，然后切换回master分支，可以看到刚才修改的内容不见了！因为那个提交是在dev分支上，而master分支此刻的提交点并没有变。
+    git merge dev
+    git merge命令用于合并指定分支到当前分支。合并后，再查看readme.txt的内容，就可以看到，和dev分支的最新提交是完全一样的。
+    git branch -d dev 删除分支
     ```
 
 17. 解决冲突
+"conflict fixed"
 
 
 
