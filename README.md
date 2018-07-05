@@ -64,3 +64,23 @@ My new project
    git merge --no-ff -m "merge with no-ff" dev ;注意--no-ff参数，表示禁用Fast forward
    ```
 
+19. 多人协作
+
+   ```
+   1. 查看远程库信息，使用git remote -v；
+   2. 本地新建的分支如果不推送到远程，对其他人就是不可见的；
+   3. 从本地推送分支，使用git push origin branch-name，如果推送失败，先用git pull抓取远程的新提交；
+   4. 在本地创建和远程分支对应的分支，使用git checkout -b branch-name origin/branch-name，本地和远程	分支的名称最好一致；
+   5. 建立本地分支和远程分支的关联，使用git branch --set-upstream branch-name origin/branch-name；
+   6. 从远程抓取分支，使用git pull，如果有冲突，要先处理冲突。
+   ```
+
+20. 标签管理
+   ```
+   敲命令`git tag <name>`就可以打一个新标签  如： git tag v1.0
+   git tag v1.0
+   命令git tag查看所有标签：git tag
+   ```
+
+
+
